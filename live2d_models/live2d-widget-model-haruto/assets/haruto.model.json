@@ -1,0 +1,19 @@
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>{"version":"Sample 1.0.0","model":"moc/haruto.moc","textures":["moc/haruto.2048/texture_00.png"],"motions":{"idle":[{"file":"mtn/idle_02.mtn"}],"":[{"file":"mtn/01.mtn"},{"file":"mtn/02.mtn"},{"file":"mtn/03.mtn"},{"file":"mtn/04.mtn"},{"file":"mtn/05.mtn"},{"file":"mtn/06.mtn"},{"file":"mtn/07.mtn"},{"file":"mtn/08.mtn"},{"file":"mtn/09.mtn"}]},"physics":"haruto.physics.json","name":"haruto"}<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
